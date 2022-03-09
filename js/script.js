@@ -1,9 +1,9 @@
 function changeImage() {
     var Image_Id = document.getElementById('Notifikation-Btn');
-    var tal = 1;
+    var tal = 0;
     if (Image_Id.src.match("./assests/red-circle-emoji.png")) {
         Image_Id.src = "./assests/green-circle-emoji.png";
-        var tal = 0;
+        var tal = 1;
     }
     else {
         Image_Id.src = "./assests/red-circle-emoji.png";
