@@ -4,7 +4,7 @@
 html{
     background-image: url(../assests/imageedit_1_4461928057.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 150%;
+    background-size: cover;
 }
 header{
     display: flex;
@@ -12,85 +12,4 @@ header{
 }
 .Header-Img{
     width: 200px;
-}
-
-.Fredagsbar-Tab{
-    background-color: rgba(37, 60, 148, 0.6);
-    border-top-right-radius: 10px;
-    font-size: 150%;
-    font-family: cabin;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 10px;
-    display: flex;
-    justify-content: end;
-}
-
-.Fredagsbar-Tab h1{
-    padding: 20px;
-    width: 90%;
-}
-.Fredagsbar-Tab h1 a{
-    color: white;
-    text-decoration: none;
-    
-}
-.Fredagsbar-Tab img{
-    width: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-content:url(../assests/arrow-24-512.png);
-}
-.yderligereInfo-Tab{
-    background-color: rgba(37, 60, 148, 0.6);
-    border-top-right-radius: 10px;
-    font-size: 150%;
-    font-family: cabin;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 20px;
-    display: flex;
-}
-.yderligereInfo-Tab h1{
-    padding: 20px;
-    width: 90%;
-}
-.yderligereInfo-Tab h1 a{
-    color: white;
-    text-decoration: none;
-}
-.yderligereInfo-Tab img{
-    width: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-content:url(../assests/arrow-24-512.png);
-}
-.Notifikation-Tab{
-    
-
-}
-.Notifikation-Btn{
-    background-image: url(/Mediazone/assests/green-circle-emoji.png);
-    background-size: cover;
-    background-color: rgba(255, 255, 255, 0);
-    border: none;
-    width: 100px;
-    height: 100px;
-    margin-top: 10px;
-    margin: 0;
-
-}
-.Btn-Div{
-    display: flex;
-    justify-content: center;
-}
-.Notifikation-Tab h1{
-    color: white;
-    font-family: cabin;
-    text-align: center;
-}
-.Notifikation-Tab h3{
-    color: white;
-    font-family: cabin;
-    text-align: center;
 }
