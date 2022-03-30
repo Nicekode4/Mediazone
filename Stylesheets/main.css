@@ -82,30 +82,8 @@ header {
   content: url(../assests/arrow-24-512.png);
 }
 
-.Notifikation-Btn {
-  background-image: url(/Mediazone/assests/green-circle-emoji.png);
-  background-size: cover;
-  background-color: rgba(255, 255, 255, 0);
-  border: none;
-  width: 100px;
-  height: 100px;
-  margin-top: 10px;
-  margin: 0;
-}
-
-.Btn-Div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.Notifikation-Tab h1, .Notifikation-Tab h3 {
-  color: white;
-  font-family: cabin;
-  text-align: center;
+.filler-section {
+  padding: 100px;
 }
 
 .a-fredagsbar {
