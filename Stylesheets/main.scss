@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+html {
+  background-image: url(../assests/imageedit_1_4461928057.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 150%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.Header-Img {
+  width: 200px;
+}
+
+.Fredagsbar-Tab {
+  background-color: rgba(37, 60, 148, 0.6);
+  border-top-right-radius: 10px;
+  font-size: 150%;
+  font-family: cabin;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: end;
+
+  h1 {
+    padding: 20px;
+    width: 90%;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  img {
+    width: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    content: url(../assests/arrow-24-512.png);
+  }
+}
+
+.yderligereInfo-Tab {
+  background-color: rgba(37, 60, 148, 0.6);
+  border-top-right-radius: 10px;
+  font-size: 150%;
+  font-family: cabin;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  display: flex;
+
+  h1 {
+    padding: 20px;
+    width: 90%;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  img {
+    width: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    content: url(../assests/arrow-24-512.png);
+  }
+}
+
+.Notifikation-Tab {}
+
+.Notifikation-Btn {
+  background-image: url(/Mediazone/assests/green-circle-emoji.png);
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  margin: 0;
+}
+
+.Btn-Div {
+  display: flex;
+  justify-content: center;
+}
+
+.Notifikation-Tab {
+  h1, h3 {
+    color: white;
+    font-family: cabin;
+    text-align: center;
+  }
+}
