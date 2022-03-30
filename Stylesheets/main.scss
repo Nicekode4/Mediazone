@@ -86,18 +86,20 @@ header {
       color: white;
       border-top: solid white 1.5px;
       width: 16vw;
+      a {
+      color: white;
+      text-decoration: none;
+    }
       span{
-        
+        margin: 0;
+        padding: 0;
       }
     }
 }
 
   
 
-    a {
-      color: white;
-      text-decoration: none;
-    }
+    
   }
   
 

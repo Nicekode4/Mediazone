@@ -104,9 +104,14 @@ h1 a {
   width: 16vw;
 }
 
-.Bustider-Tab a {
+.Bustider-Tab h1 p a {
   color: white;
   text-decoration: none;
+}
+
+.Bustider-Tab h1 p span {
+  margin: 0;
+  padding: 0;
 }
 
 .Fredagsbar-Tab {
