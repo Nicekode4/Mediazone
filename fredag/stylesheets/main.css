@@ -18,4 +18,72 @@ header {
 .Header-Img {
   width: 200px;
 }
+
+.filler-section {
+  padding: 50px;
+}
+
+.main-section {
+  text-align: center;
+}
+
+.container {
+  color: white;
+  font-family: cabin;
+}
+
+#countdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#countdown label {
+  margin-right: 0;
+  margin-left: 40px;
+}
+
+#countdown p {
+  margin-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+#countdown #dage {
+  font-size: 500%;
+}
+
+#countdown #timer {
+  font-size: 500%;
+}
+
+#countdown #minutter {
+  font-size: 500%;
+}
+
+#countdown #sekunder {
+  font-size: 500%;
+}
+
+footer {
+  bottom: 0;
+  position: fixed;
+}
+
+footer img {
+  width: 20vw;
+  margin: 10px;
+}
+
+.footer-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 /*# sourceMappingURL=main.css.map */
