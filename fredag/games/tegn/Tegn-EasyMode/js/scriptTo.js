@@ -15,11 +15,23 @@ const getRandValTo = () => {
   document.getElementById("randomValueTo").innerHTML = randomValueFromArrayTo([
     "der løber",
     "der hopper",
-    "der slår sin kæreste i hovedet med en burito",
-    "der gemmer penge i skattely",
-    "der spiser maccen",
-    "der er gået kold i busken",
-    "der har glemt sin duolingo lektion....",
+    "der græder",
+    "der danser",
+    "der griner",
+    "der stikker af fra politiet",
+    "der hopper",
+    "der spiller tennis",
+    "der svømmer",
+    "der laver stand up",
+    "der slår græsset",
+    "der tænder lys",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+
   ]);
 
 

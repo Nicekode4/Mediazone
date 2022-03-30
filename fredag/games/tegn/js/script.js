@@ -1,39 +1,43 @@
-var alreadyDone = [];
-const randomValueFromArray = (myArray) => {
-  if (alreadyDone.length === 0) {
-    for (var i = 0; i < myArray.length; i++) alreadyDone.push(i);
+(function () {
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+  //I'm adding this section so I don't have to keep updating this pen every year :-)
+  //remove this if you don't need it
+  let today = new Date(),
+      dd = String(today.getDate()).padStart(2, "0"),
+      mm = String(today.getMonth() + 1).padStart(2, "0"),
+      yyyy = today.getFullYear(),
+      nextYear = yyyy + 1,
+      dayMonth = "04/1/",
+      birthday = dayMonth + yyyy;
+  
+  today = mm + "/" + dd + "/" + yyyy;
+  if (today > birthday) {
+    birthday = dayMonth + nextYear;
   }
-  var randomValueIndex = Math.floor(Math.random() * alreadyDone.length);
-  var indexOfItemInMyArray = alreadyDone[randomValueIndex];
+  //end
+  
+  const countDown = new Date(birthday).getTime(),
+      x = setInterval(function() {    
 
-  alreadyDone.splice(randomValueIndex, 1);
+        const now = new Date().getTime(),
+              distance = countDown - now;
 
-  return myArray[indexOfItemInMyArray];
-};
+        document.getElementById("dage").innerText = Math.floor(distance / (day)),
+          document.getElementById("timer").innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementById("minutter").innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById("sekunder").innerText = Math.floor((distance % (minute)) / second);
 
-const getRandVal = () => {
-  document.getElementById("randomValue").innerHTML = randomValueFromArray([
-    "En hund",
-    "En flodhest",
-    "En giraf",
-    "En drengerøv",
-    "En reality deltager",
-    "En sanger",
-    "Mig og drengene",
-    "Florida mand",
-    "En gamer",
-    "En mand",
-    "En kvinde",
-    "Duolingo uglen",
-    ]);
-
-
-  // console.log(alreadyDone)
-  let length =  alreadyDone.length
-
-document.getElementById("counter").innerHTML = length;
-
-};
-
-submit.onclick = getRandVal;
-getRandVal()
+        //do something later when date is reached
+        if (distance < 0) {
+          document.getElementById("headline").innerText = "Det sker lige nu!";
+          document.getElementById("countdown").style.display = "none";
+          document.getElementById("content").style.display = "block";
+          clearInterval(x);
+        }
+        //seconds
+      }, 0)
+  }());
