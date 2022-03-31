@@ -5,7 +5,7 @@
 html {
   background-image: url(../assests/imageedit_1_4461928057.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 210%;
 }
 
 header {
@@ -29,6 +29,7 @@ header {
 #countdown{
   display: flex;
   justify-content: center;
+  margin-right: 40px;
   label{
     margin-right: 0;
     margin-left: 40px;
@@ -39,16 +40,16 @@ header {
     margin-bottom: 0;
   }
   #dage{
-font-size: 500%;
+font-size: 350%;
   }
   #timer{
-    font-size: 500%;
+    font-size: 350%;
       }
       #minutter{
-        font-size: 500%;
+        font-size: 350%;
           }
           #sekunder{
-            font-size: 500%;
+            font-size: 350%;
               }
 }
 .Games-a{

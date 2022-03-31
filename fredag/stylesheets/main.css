@@ -3,7 +3,7 @@
 html {
   background-image: url(../assests/imageedit_1_4461928057.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 210%;
 }
 
 header {
@@ -39,6 +39,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-right: 40px;
 }
 
 #countdown label {
@@ -53,19 +54,29 @@ header {
 }
 
 #countdown #dage {
-  font-size: 500%;
+  font-size: 350%;
 }
 
 #countdown #timer {
-  font-size: 500%;
+  font-size: 350%;
 }
 
 #countdown #minutter {
-  font-size: 500%;
+  font-size: 350%;
 }
 
 #countdown #sekunder {
-  font-size: 500%;
+  font-size: 350%;
+}
+
+.Games-a {
+  background-color: white;
+  padding: 10px;
+  border-radius: 50px;
+  bottom: 0;
+  right: 0;
+  margin: 50px;
+  position: fixed;
 }
 
 footer {
