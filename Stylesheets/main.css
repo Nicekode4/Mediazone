@@ -23,13 +23,108 @@ header {
   padding: 100px;
 }
 
+.Kantinen-Tab {
+  background-color: rgba(37, 60, 148, 0.6);
+  border-top-right-radius: 10px;
+  font-size: 150%;
+  font-family: cabin;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.Kantinen-Tab img {
+  width: 50px;
+  height: 50px;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  content: url(../assests/arrow-24-512.png);
+}
+
+h1 {
+  padding: 20px;
+  width: 90%;
+}
+
+h1 p {
+  margin: 0;
+  font-size: large;
+  color: white;
+  border-top: solid white 1.5px;
+  width: 31vw;
+}
+
+h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+.Bustider-Tab {
+  background-color: rgba(37, 60, 148, 0.6);
+  border-top-right-radius: 10px;
+  font-size: 150%;
+  font-family: cabin;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.Bustider-Tab img {
+  width: 50px;
+  height: 50px;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  content: url(../assests/arrow-24-512.png);
+}
+
+.Bustider-Tab h1 {
+  padding: 20px;
+  width: 90%;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.Bustider-Tab h1 p {
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: large;
+  color: white;
+  border-top: solid white 1.5px;
+  width: 16vw;
+}
+
+.Bustider-Tab h1 p a {
+  color: white;
+  text-decoration: none;
+}
+
+.Bustider-Tab h1 p span {
+  margin: 0;
+  padding: 0;
+}
+
 .Fredagsbar-Tab {
   background-color: rgba(37, 60, 148, 0.6);
   border-top-right-radius: 10px;
   font-size: 150%;
   font-family: cabin;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -51,6 +146,7 @@ header {
 
 .Fredagsbar-Tab img {
   width: 50px;
+  height: 50px;
   padding-top: 50px;
   padding-bottom: 50px;
   content: url(../assests/arrow-24-512.png);
@@ -61,8 +157,8 @@ header {
   border-top-right-radius: 10px;
   font-size: 150%;
   font-family: cabin;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -81,9 +177,16 @@ header {
 
 .yderligereInfo-Tab img {
   width: 50px;
-  padding-top: 50px;
+  height: 50px;
+  padding-top: 60px;
   padding-bottom: 50px;
   content: url(../assests/arrow-24-512.png);
+}
+
+.a-kantinen {
+  padding-right: 70%;
+  padding-top: 40px;
+  padding-bottom: 60px;
 }
 
 .a-fredagsbar {
