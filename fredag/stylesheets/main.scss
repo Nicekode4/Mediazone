@@ -39,17 +39,27 @@ header {
     margin-bottom: 0;
   }
   #dage{
-font-size: 500%;
+font-size: 300%;
   }
   #timer{
-    font-size: 500%;
+    font-size: 300%;
+    
       }
       #minutter{
-        font-size: 500%;
+        font-size: 300%;
           }
           #sekunder{
-            font-size: 500%;
+            font-size: 300%;
               }
+}
+.Games-a{
+  background-color: white;
+  padding: 10px;
+  border-radius: 50px;
+  bottom: 0;
+  right: 0;
+  margin: 50px;
+  position: fixed;
 }
 footer{
   bottom: 0;

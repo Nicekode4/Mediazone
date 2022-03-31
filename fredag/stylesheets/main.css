@@ -53,19 +53,29 @@ header {
 }
 
 #countdown #dage {
-  font-size: 500%;
+  font-size: 300%;
 }
 
 #countdown #timer {
-  font-size: 500%;
+  font-size: 300%;
 }
 
 #countdown #minutter {
-  font-size: 500%;
+  font-size: 300%;
 }
 
 #countdown #sekunder {
-  font-size: 500%;
+  font-size: 300%;
+}
+
+.Games-a {
+  background-color: white;
+  padding: 10px;
+  border-radius: 50px;
+  bottom: 0;
+  right: 0;
+  margin: 50px;
+  position: fixed;
 }
 
 footer {
