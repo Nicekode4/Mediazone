@@ -47,7 +47,8 @@ header {
       font-size: large;
       color: white;
       border-top: solid white 1.5px;
-      width: 31vw;
+      width: 90%;
+      
       span{
         
       }
@@ -56,6 +57,7 @@ header {
     a {
       color: white;
       text-decoration: none;
+      
     }
   }
   
@@ -89,14 +91,16 @@ header {
       font-size: large;
       color: white;
       border-top: solid white 1.5px;
-      width: 16vw;
+      width: 90%;
       a {
       color: white;
       text-decoration: none;
+      width: 90%;
     }
       span{
         margin: 0;
         padding: 0;
+        width: 90%;
       }
     }
 }

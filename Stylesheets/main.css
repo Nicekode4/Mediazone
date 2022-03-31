@@ -58,7 +58,7 @@ h1 p {
   font-size: large;
   color: white;
   border-top: solid white 1.5px;
-  width: 31vw;
+  width: 90%;
 }
 
 h1 a {
@@ -105,17 +105,19 @@ h1 a {
   font-size: large;
   color: white;
   border-top: solid white 1.5px;
-  width: 16vw;
+  width: 90%;
 }
 
 .Bustider-Tab h1 p a {
   color: white;
   text-decoration: none;
+  width: 90%;
 }
 
 .Bustider-Tab h1 p span {
   margin: 0;
   padding: 0;
+  width: 90%;
 }
 
 .Fredagsbar-Tab {
