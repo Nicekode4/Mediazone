@@ -71,6 +71,10 @@ header {
 footer {
   bottom: 0;
   position: fixed;
+  background-color: white;
+  width: 90%;
+  border-radius: 10px;
+  margin-left: 3vw;
 }
 
 footer img {
@@ -82,8 +86,18 @@ footer img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer-div a {
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  margin-right: 10px;
+  margin: 10px;
+  font-size: 200%;
 }
 /*# sourceMappingURL=main.css.map */

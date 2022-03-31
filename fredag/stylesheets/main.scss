@@ -54,6 +54,10 @@ font-size: 500%;
 footer{
   bottom: 0;
   position: fixed;
+  background-color: white;
+  width: 90%;
+  border-radius: 10px;
+  margin-left: 3vw;
   img{
     width: 20vw;
     margin: 10px;
@@ -61,5 +65,15 @@ footer{
 }
 .footer-div{
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  a{
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-right: 10px;
+    margin: 10px;
+    font-size: 200%;
+
+  }
 }
