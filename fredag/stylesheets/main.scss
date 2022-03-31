@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
+@import url('https://fonts.googleapis.com/css?family=Righteous');
 html {
   background-image: url(../assests/imageedit_1_4461928057.jpg);
   background-repeat: no-repeat;
@@ -13,9 +14,43 @@ header {
   justify-content: center;
 }
 
+.arrow {
+	position: absolute;
+	top: 1em;
+  left: 2em;
+	width: 10px;
+	height: 10px;
+	background: transparent;
+	border-top: 3px solid #fff;
+	border-right: 3px solid #fff;
+	box-shadow: 0 0 0 lightgray;
+	transition: all 200ms ease;
+	
+	&.back {
+		left: 6em;
+    top: 6em;
+		transform: translate3d(0,-50%,0) rotate(-135deg);
+	}	
+	&:hover {
+		border-color: darkblue;
+		box-shadow: 0.5vmin -0.5vmin 0 #fff;
+	}
+	
+	&:before { 
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-40%,-60%) rotate(45deg);
+		width: 200%;
+		height: 200%;
+	}
+}
+
 .Header-Img {
   width: 200px;
 }
+
 .filler-section{
   padding: 50px;
 }
