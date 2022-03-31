@@ -1,3 +1,7 @@
+html {
+  background-image: url(../assests/lounge-blur.png);
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;

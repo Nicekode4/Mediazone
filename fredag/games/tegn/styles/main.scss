@@ -2,6 +2,9 @@ $Alizarin-Crimson: #DC2424;
 $Bay-of-Many: #253C94;
 $Periwinkle-Gray: #C8CFE5;
 $Brick-Red: #B42C44;
+html {
+    background-image: url(../assests/lounge-blur.png);
+}  
 header{
     display: flex;
     justify-content: center;
