@@ -3,7 +3,7 @@
 html {
   background-image: url(/assests/lounge-blurr.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 210%;
 }
 
 header {
