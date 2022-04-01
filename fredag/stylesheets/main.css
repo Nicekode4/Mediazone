@@ -16,7 +16,7 @@ header {
 }
 
 .arrow {
-  position: absolute;
+  position: fixed;
   top: 2em;
   left: 2em;
   width: 20px;
