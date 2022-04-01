@@ -12,7 +12,38 @@ header {
   display: flex;
   justify-content: center;
 }
-
+.arrow {
+	position: absolute;
+	top: 1em;
+  left: 2em;
+	width: 10px;
+	height: 10px;
+	background: transparent;
+	border-top: 3px solid #fff;
+	border-right: 3px solid #fff;
+	box-shadow: 0 0 0 lightgray;
+	transition: all 200ms ease;
+	
+	&.back {
+		left: 6em;
+    top: 6em;
+		transform: translate3d(0,-50%,0) rotate(-135deg);
+	}	
+	&:hover {
+		border-color: darkblue;
+		box-shadow: 0.5vmin -0.5vmin 0 #fff;
+	}
+	
+	&:before { 
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-40%,-60%) rotate(45deg);
+		width: 200%;
+		height: 200%;
+	}
+}
 .Header-Img {
   width: 200px;
 }

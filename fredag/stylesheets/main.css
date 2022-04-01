@@ -15,6 +15,45 @@ header {
           justify-content: center;
 }
 
+.arrow {
+  position: absolute;
+  top: 1em;
+  left: 2em;
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  -webkit-box-shadow: 0 0 0 lightgray;
+          box-shadow: 0 0 0 lightgray;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+.arrow.back {
+  left: 6em;
+  top: 6em;
+  -webkit-transform: translate3d(0, -50%, 0) rotate(-135deg);
+          transform: translate3d(0, -50%, 0) rotate(-135deg);
+}
+
+.arrow:hover {
+  border-color: darkblue;
+  -webkit-box-shadow: 0.5vmin -0.5vmin 0 #fff;
+          box-shadow: 0.5vmin -0.5vmin 0 #fff;
+}
+
+.arrow:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-40%, -60%) rotate(45deg);
+          transform: translate(-40%, -60%) rotate(45deg);
+  width: 200%;
+  height: 200%;
+}
+
 .Header-Img {
   width: 200px;
 }
