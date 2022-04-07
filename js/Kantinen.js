@@ -23,11 +23,11 @@ switch(dayOfWeekNumber){
         break;
     case 4:
         nameOfDay = 'Thursday';
-        quote = 'Æggekage ”spansk inspireret” - kr. 28,00';
+        quote = 'Forloren hare med baconbønner - kr. 28,00';
         break;
     case 5:
         nameOfDay = 'Friday';
-        quote = 'Pasta kødsauce med ost og jalapenos';
+        quote = 'Kyllingeburger med kartofler';
         break;
     case 6:
         nameOfDay = 'Saturday';
