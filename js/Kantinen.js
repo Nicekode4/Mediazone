@@ -11,23 +11,23 @@ switch(dayOfWeekNumber){
         break;
     case 1:
         nameOfDay = 'Monday';
-        quote = 'Frikadeller med kartofler og rødkål - kr. 28,00';
+        quote = 'lukket';
         break;
     case 2:
         nameOfDay = 'Tuesday';
-        quote = 'Kyllingelår med sennep/honning og rodfrugter - kr. 28,00';
+        quote = 'Brændende kærlighed med kartoffelmos - kr. 28,00';
         break;
     case 3:
         nameOfDay = 'Wednesday';
-        quote = 'Karbonader med grønærter og kartofler - kr. 28,00';
+        quote = 'Pasta bolognese med revet ost - kr. 28,00';
         break;
     case 4:
         nameOfDay = 'Thursday';
-        quote = 'Forloren hare med baconbønner - kr. 28,00';
+        quote = 'Kyllingelår med ris og peanutsauce - kr. 28,00';
         break;
     case 5:
         nameOfDay = 'Friday';
-        quote = 'Kyllingeburger med kartofler';
+        quote = 'Bøfsandwich med kartofler - kr. 28,00';
         break;
     case 6:
         nameOfDay = 'Saturday';
