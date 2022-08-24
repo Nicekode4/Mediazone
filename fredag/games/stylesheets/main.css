@@ -7,15 +7,11 @@ html {
 }
 
 section {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+  grid-template-columns: 50% 50%;
   gap: 10px;
 }
-
 section img {
   width: 250px;
   height: 250px;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

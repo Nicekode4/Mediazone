@@ -7,12 +7,8 @@ html {
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .arrow {
@@ -24,32 +20,24 @@ header {
   background: transparent;
   border-top: 5px solid #ccc;
   border-right: 5px solid #ccc;
-  -webkit-box-shadow: 0 0 0 lightgray;
-          box-shadow: 0 0 0 lightgray;
-  -webkit-transition: all 200ms ease;
+  box-shadow: 0 0 0 lightgray;
   transition: all 200ms ease;
 }
-
 .arrow.back {
   left: 6em;
   top: 5.6em;
-  -webkit-transform: translate3d(0, -50%, 0) rotate(-135deg);
-          transform: translate3d(0, -50%, 0) rotate(-135deg);
+  transform: translate3d(0, -50%, 0) rotate(-135deg);
 }
-
 .arrow:hover {
   border-color: #273c92;
-  -webkit-box-shadow: 0.5vmin -0.5vmin 0 #ccc;
-          box-shadow: 0.5vmin -0.5vmin 0 #ccc;
+  box-shadow: 0.5vmin -0.5vmin 0 #ccc;
 }
-
 .arrow:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-40%, -60%) rotate(45deg);
-          transform: translate(-40%, -60%) rotate(45deg);
+  transform: translate(-40%, -60%) rotate(45deg);
   width: 200%;
   height: 200%;
 }
@@ -72,38 +60,28 @@ header {
 }
 
 #countdown {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-right: 40px;
 }
-
 #countdown label {
   margin-right: 0;
   margin-left: 40px;
 }
-
 #countdown p {
   margin-top: 0;
   padding-bottom: 0;
   margin-bottom: 0;
 }
-
 #countdown #dage {
   font-size: 350%;
 }
-
 #countdown #timer {
   font-size: 350%;
 }
-
 #countdown #minutter {
   font-size: 350%;
 }
-
 #countdown #sekunder {
   font-size: 350%;
 }
@@ -126,21 +104,15 @@ footer {
   border-radius: 10px;
   margin-left: 3vw;
 }
-
 footer img {
   width: 20vw;
   margin: 10px;
 }
 
 .footer-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
-
 .footer-div a {
   background-color: #de2627;
   color: #fdfdfe;
@@ -149,5 +121,4 @@ footer img {
   margin-right: 10px;
   margin: 10px;
   font-size: 200%;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
