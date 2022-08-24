@@ -2,18 +2,16 @@
 
                     $.getJSON('https://xmlopen.rejseplanen.dk/bin/rest.exe/multiDepartureBoard?id1=851400601&id2=851973402&id3=851400601&format=json', function(data) {
 
+                    let MyData = `${data}`
                       var navn = `${data.MultiDepartureBoard.Departure[0].line}`
                       var tid = `${data.MultiDepartureBoard.Departure[0].time}`
                       var destination = `${data.MultiDepartureBoard.Departure[0].finalStop}`
                       var HvorErDen = `${data.MultiDepartureBoard.Departure[0].stop}`
-                      var navn2 = `${data.MultiDepartureBoard.Departure[1].line}`
-                      var tid2 = `${data.MultiDepartureBoard.Departure[1].time}`
-                      var destination2 = `${data.MultiDepartureBoard.Departure[1].finalStop}`
-                      var HvorErDen2 = `${data.MultiDepartureBoard.Departure[1].stop}`
-                      var navn3 = `${data.MultiDepartureBoard.Departure[2].line}`
-                      var tid3 = `${data.MultiDepartureBoard.Departure[2].time}`
-                      var destination3 = `${data.MultiDepartureBoard.Departure[2].finalStop}`
-                      var HvorErDen3 = `${data.MultiDepartureBoard.Departure[2].stop}`
+console.log(`${data.MultiDepartureBoard}`);
+                      for (let index = 0; index < 3; index++) {
+                        document.body.innerHTML = '<section class=""><article class=""><h1 class="busnavn">Busnr</h1><h3 class="HvorHolderDen">Navn/hvor holder den</h3><h5 class="busdestination">Destination</h5></article><article class="Card-One-Art-Two"><h1 class="bustid">Tidspunkt</h1></article></section>'
+                        
+                      }
                                            
                                               
                    
