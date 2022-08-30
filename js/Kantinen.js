@@ -1,44 +1,52 @@
-//Grab day of the week from local computer
+
 let date = new Date();
 let dayOfWeekNumber = date.getDay();
-let nameOfDay;
-let quote;
+if (window.localStorage.getItem('isCached') === null) {
+    window.localStorage.setItem('isCached', false)
+}
+let isCached = window.localStorage.getItem('isCached')
+
+let menu = JSON.parse(window.localStorage.getItem('canteen'))
 
 switch(dayOfWeekNumber){
     case 0: 
         nameOfDay = 'Sunday';
-        quote = 'Du har weekend <3';
+        document.querySelector('#dish').innerHTML = 'Du har weekend <3';
         break;
     case 1:
         nameOfDay = 'Monday';
-        quote = 'lukket';
+        if (isCached == false) {
+            $.getJSON('https://infoskaerm.techcollege.dk/umbraco/api/content/getcanteenmenu/?format=json', function(data) {
+            window.localStorage.setItem('canteen', JSON.stringify(data))
+            })
+        }else{
+            document.querySelector('#dish').innerHTML = menu.Days[dayOfWeekNumber - 1].Dish
+        }
         break;
     case 2:
         nameOfDay = 'Tuesday';
-        quote = 'Brændende kærlighed med kartoffelmos - kr. 28,00';
+        document.querySelector('#dish').innerHTML = menu.Days[dayOfWeekNumber - 1].Dish
         break;
     case 3:
         nameOfDay = 'Wednesday';
-        quote = 'Pasta bolognese med revet ost - kr. 28,00';
+        document.querySelector('#dish').innerHTML = menu.Days[dayOfWeekNumber - 1].Dish
         break;
     case 4:
         nameOfDay = 'Thursday';
-        quote = 'Kyllingelår med ris og peanutsauce - kr. 28,00';
+        document.querySelector('#dish').innerHTML = menu.Days[dayOfWeekNumber - 1].Dish
         break;
     case 5:
         nameOfDay = 'Friday';
-        quote = 'Bøfsandwich med kartofler - kr. 28,00';
+        document.querySelector('#dish').innerHTML = menu.Days[dayOfWeekNumber - 1].Dish
         break;
     case 6:
         nameOfDay = 'Saturday';
-        quote = 'Du har weekend <3';
+        document.querySelector('#dish').innerHTML = 'Du har weekend <3';
         break;
 
 }
-//Display the day of the week
-let weekdayDiv = document.getElementById('weekday');
-weekdayDiv.innerHTML = `${nameOfDay}`;
 
-//Display quote
-let quoteDiv = document.getElementById('phrase');
-quoteDiv.innerHTML = `${quote}`;
+
+
+
+ 
