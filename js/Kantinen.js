@@ -2,7 +2,10 @@
 let date = new Date();
 let dayOfWeekNumber = date.getDay();
 if (window.localStorage.getItem('isCached') === null) {
-    window.localStorage.setItem('isCached', false)
+    window.localStorage.setItem('isCached', true)
+    $.getJSON('https://infoskaerm.techcollege.dk/umbraco/api/content/getcanteenmenu/?format=json', function(data) {
+        window.localStorage.setItem('canteen', JSON.stringify(data))
+        })
 }
 let isCached = window.localStorage.getItem('isCached')
 
@@ -18,6 +21,7 @@ switch(dayOfWeekNumber){
         if (isCached == false) {
             $.getJSON('https://infoskaerm.techcollege.dk/umbraco/api/content/getcanteenmenu/?format=json', function(data) {
             window.localStorage.setItem('canteen', JSON.stringify(data))
+            window.localStorage.setItem('isCached', true)
             })
         }else{
             document.querySelector('#dish').innerHTML = menu.Days[dayOfWeekNumber - 1].Dish
@@ -26,22 +30,27 @@ switch(dayOfWeekNumber){
     case 2:
         nameOfDay = 'Tuesday';
         document.querySelector('#dish').innerHTML = menu.Days[dayOfWeekNumber - 1].Dish
+        window.localStorage.setItem('isCached', false)
         break;
     case 3:
         nameOfDay = 'Wednesday';
         document.querySelector('#dish').innerHTML = menu.Days[dayOfWeekNumber - 1].Dish
+        window.localStorage.setItem('isCached', false)
         break;
     case 4:
         nameOfDay = 'Thursday';
         document.querySelector('#dish').innerHTML = menu.Days[dayOfWeekNumber - 1].Dish
+        window.localStorage.setItem('isCached', false)
         break;
     case 5:
         nameOfDay = 'Friday';
         document.querySelector('#dish').innerHTML = menu.Days[dayOfWeekNumber - 1].Dish
+        window.localStorage.setItem('isCached', false)
         break;
     case 6:
         nameOfDay = 'Saturday';
         document.querySelector('#dish').innerHTML = 'Du har weekend <3';
+        window.localStorage.setItem('isCached', false)
         break;
 
 }
