@@ -1,83 +1,51 @@
 
 let date = new Date();
 let dayOfWeekNumber = date.getDay();
-if (window.localStorage.getItem('isCached') === null) {
-    window.localStorage.setItem('isCached', true)
+currentdate = new Date();
+let oneJan = new Date(currentdate.getFullYear(),0,1);
+let numberOfDays = Math.floor((currentdate - oneJan) / (24 * 60 * 60 * 1000));
+let result = Math.ceil(( currentdate.getDay() + 1 + numberOfDays) / 7);
+let menu = JSON.parse(window.localStorage.getItem('canteen'))
+if (result != menu.Week) {
+
     $.getJSON('https://infoskaerm.techcollege.dk/umbraco/api/content/getcanteenmenu/?format=json', function(data) {
         window.localStorage.setItem('canteen', JSON.stringify(data))
         })
+}else{
+    switch(dayOfWeekNumber){
+        case 0: 
+            nameOfDay = 'Sunday';
+            document.querySelector('#dish').innerHTML = 'Du har weekend <3';
+            break;
+        case 1:
+            nameOfDay = 'Monday';
+            document.querySelector('#dish').innerHTML = menu.Days[dayOfWeekNumber - 1].Dish
+            break;
+        case 2:
+            nameOfDay = 'Tuesday';
+            document.querySelector('#dish').innerHTML = menu.Days[dayOfWeekNumber - 1].Dish
+            break;
+        case 3:
+            nameOfDay = 'Wednesday';
+            document.querySelector('#dish').innerHTML = menu.Days[dayOfWeekNumber - 1].Dish
+            break;
+        case 4:
+            nameOfDay = 'Thursday';
+            document.querySelector('#dish').innerHTML = menu.Days[dayOfWeekNumber - 1].Dish
+            break;
+        case 5:
+            nameOfDay = 'Friday';
+            document.querySelector('#dish').innerHTML = menu.Days[dayOfWeekNumber - 1].Dish
+            break;
+        case 6:
+            nameOfDay = 'Saturday';
+            document.querySelector('#dish').innerHTML = 'Du har weekend <3';
+            break;
+    
+    }
 }
-let isCached = window.localStorage.getItem('isCached')
 
-let menu = JSON.parse(window.localStorage.getItem('canteen'))
 
-switch(dayOfWeekNumber){
-    case 0: 
-        nameOfDay = 'Sunday';
-        document.querySelector('#dish').innerHTML = 'Du har weekend <3';
-        break;
-    case 1:
-        nameOfDay = 'Monday';
-        if (isCached == false) {
-            $.getJSON('https://infoskaerm.techcollege.dk/umbraco/api/content/getcanteenmenu/?format=json', function(data) {
-            window.localStorage.setItem('canteen', JSON.stringify(data))
-            window.localStorage.setItem('isCached', true)
-            })
-        }else{
-            document.querySelector('#dish').innerHTML = menu.Days[dayOfWeekNumber - 1].Dish
-        }
-        break;
-    case 2:
-        nameOfDay = 'Tuesday';
-        if (isCached == false) {
-            $.getJSON('https://infoskaerm.techcollege.dk/umbraco/api/content/getcanteenmenu/?format=json', function(data) {
-            window.localStorage.setItem('canteen', JSON.stringify(data))
-            window.localStorage.setItem('isCached', true)
-            })
-        }else{
-            document.querySelector('#dish').innerHTML = menu.Days[dayOfWeekNumber - 1].Dish
-        }
-        break;
-    case 3:
-        nameOfDay = 'Wednesday';
-        if (isCached == false) {
-            $.getJSON('https://infoskaerm.techcollege.dk/umbraco/api/content/getcanteenmenu/?format=json', function(data) {
-            window.localStorage.setItem('canteen', JSON.stringify(data))
-            window.localStorage.setItem('isCached', true)
-            })
-        }else{
-            document.querySelector('#dish').innerHTML = menu.Days[dayOfWeekNumber - 1].Dish
-        }
-        break;
-    case 4:
-        nameOfDay = 'Thursday';
-        if (isCached == false) {
-            $.getJSON('https://infoskaerm.techcollege.dk/umbraco/api/content/getcanteenmenu/?format=json', function(data) {
-            window.localStorage.setItem('canteen', JSON.stringify(data))
-            window.localStorage.setItem('isCached', true)
-            })
-        }else{
-            document.querySelector('#dish').innerHTML = menu.Days[dayOfWeekNumber - 1].Dish
-        }
-        break;
-    case 5:
-        nameOfDay = 'Friday';
-        if (isCached == false) {
-            $.getJSON('https://infoskaerm.techcollege.dk/umbraco/api/content/getcanteenmenu/?format=json', function(data) {
-            window.localStorage.setItem('canteen', JSON.stringify(data))
-            window.localStorage.setItem('isCached', true)
-            })
-        }else{
-            document.querySelector('#dish').innerHTML = menu.Days[dayOfWeekNumber - 1].Dish
-        }
-        break;
-    case 6:
-        nameOfDay = 'Saturday';
-        document.querySelector('#dish').innerHTML = 'Du har weekend <3';
-        window.localStorage.setItem('isCached', false)
-        break;
-
-}
 
 
 
