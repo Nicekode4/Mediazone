@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+$blue: #253C94;
+$red: #DC2424;
+
+html {
+background-color: #253C94;
+}
+body{
+  font-family: Cabin;
+  color: white;
+}
+.Card-One{
+  display: flex;
+  justify-content: center;
+  border-radius: 42px;
+  border-radius: 19px;
+  background: #253C94;
+  box-shadow:  -15px 15px 30px #152253,
+               15px -15px 30px #3556d5;
+  margin-bottom: 10px;
+
+}
+.Card-One-Art-One{
+  width: 70%;
+  margin: 10px;
+  font-size: 150%;
+  
+}
+.Card-One-Art-Two{
+  width: 30%;
+  text-align: right;
+  margin: 10px;
+  font-size: 150%;
+}
+.Card-Two{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-radius: 19px;
+  background: #253C94;
+  box-shadow:  -23px 23px 47px #1b2b6b,
+               23px -23px 47px #2f4dbd;
+  margin-top: 10px;
+}
+.Card-Two-Art-One{
+  width: 70%;
+  margin: 10px;
+  font-size: 150%;
+}
+.Card-Two-Art-Two{
+  width: 30%;
+  text-align: right;
+  margin: 10px;
+  font-size: 150%;
+}
+.Card-Three{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: $blue;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.Card-Three-Art-One{
+  width: 70%;
+  margin: 10px;
+  font-size: 150%;
+}
+.Card-Three-Art-Two{
+  width: 30%;
+  text-align: right;
+  margin: 10px;
+  font-size: 150%;
+}
