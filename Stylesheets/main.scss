@@ -3,9 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 html {
-  background-image: url(../assests/imageedit_1_4461928057.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 150%;
+background-color: #253C94;
 }
 
 header {
@@ -20,8 +18,10 @@ header {
   padding: 100px;
 }
 .Kantinen-Tab {
-  background-color: rgba(37, 60, 148, 0.6);
-  border-top-right-radius: 10px;
+  border-radius: 19px;
+  background: #253C94;
+  box-shadow:  -23px 23px 47px #1b2b6b,
+               23px -23px 47px #2f4dbd;
   font-size: 150%;
   font-family: cabin;
   margin-bottom: 20px;
@@ -62,8 +62,10 @@ header {
   }
   
 .Bustider-Tab {
-  background-color: rgba(37, 60, 148, 0.6);
-  border-top-right-radius: 10px;
+  border-radius: 19px;
+  background: #253C94;
+  box-shadow:  -23px 23px 47px #1b2b6b,
+               23px -23px 47px #2f4dbd;
   font-size: 150%;
   font-family: cabin;
   margin-bottom: 20px;
@@ -112,8 +114,10 @@ header {
   
 
 .Fredagsbar-Tab {
-  background-color: rgba(37, 60, 148, 0.6);
-  border-top-right-radius: 10px;
+  border-radius: 19px;
+  background: #253C94;
+  box-shadow:  -23px 23px 47px #1b2b6b,
+               23px -23px 47px #2f4dbd;
   font-size: 150%;
   font-family: cabin;
   margin-left: 20px;
@@ -142,8 +146,10 @@ header {
 }
 
 .yderligereInfo-Tab {
-  background-color: rgba(37, 60, 148, 0.6);
-  border-top-right-radius: 10px;
+  border-radius: 19px;
+  background: #253C94;
+  box-shadow:  -23px 23px 47px #1b2b6b,
+               23px -23px 47px #2f4dbd;
   font-size: 150%;
   font-family: cabin;
   margin-left: 20px;

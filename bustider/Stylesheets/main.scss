@@ -6,9 +6,7 @@ $blue: #253C94;
 $red: #DC2424;
 
 html {
-  background-image: url(../assests/imageedit_1_4461928057.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+background-color: #253C94;
 }
 body{
   font-family: Cabin;
@@ -17,9 +15,11 @@ body{
 .Card-One{
   display: flex;
   justify-content: center;
-  width: 100%;
-  background-color: $blue;
-  border-radius: 10px;
+  border-radius: 42px;
+  border-radius: 19px;
+  background: #253C94;
+  box-shadow:  -15px 15px 30px #152253,
+               15px -15px 30px #3556d5;
   margin-bottom: 10px;
 
 }
@@ -27,6 +27,7 @@ body{
   width: 70%;
   margin: 10px;
   font-size: 150%;
+  
 }
 .Card-One-Art-Two{
   width: 30%;
@@ -38,8 +39,10 @@ body{
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: $blue;
-  border-radius: 10px;
+  border-radius: 19px;
+  background: #253C94;
+  box-shadow:  -23px 23px 47px #1b2b6b,
+               23px -23px 47px #2f4dbd;
   margin-top: 10px;
 }
 .Card-Two-Art-One{
