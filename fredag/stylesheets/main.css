@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap");
 html {
-  background-image: url(/assests/lounge-blurr.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #273C92;
+  color: white;
+  font-family: Cabin;
 }
 
 header {
@@ -18,8 +21,8 @@ header {
   width: 20px;
   height: 20px;
   background: transparent;
-  border-top: 5px solid #ccc;
-  border-right: 5px solid #ccc;
+  border-top: 5px solid rgba(59, 59, 59, 0.904);
+  border-right: 5px solid rgba(59, 59, 59, 0.904);
   box-shadow: 0 0 0 lightgray;
   transition: all 200ms ease;
 }
@@ -29,8 +32,8 @@ header {
   transform: translate3d(0, -50%, 0) rotate(-135deg);
 }
 .arrow:hover {
-  border-color: #273c92;
-  box-shadow: 0.5vmin -0.5vmin 0 #ccc;
+  border-color: #273C92;
+  box-shadow: 0.5vmin -0.5vmin 0 rgba(59, 59, 59, 0.904);
 }
 .arrow:before {
   content: "";
@@ -44,6 +47,7 @@ header {
 
 .Header-Img {
   width: 200px;
+  margin-bottom: 15vh;
 }
 
 .filler-section {
@@ -55,51 +59,24 @@ header {
 }
 
 .container {
-  color: #fdfdfe;
+  color: #efefef;
   font-family: cabin;
 }
 
-#countdown {
-  display: flex;
-  justify-content: center;
-  margin-right: 40px;
-}
-#countdown label {
-  margin-right: 0;
-  margin-left: 40px;
-}
-#countdown p {
-  margin-top: 0;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-#countdown #dage {
-  font-size: 350%;
-}
-#countdown #timer {
-  font-size: 350%;
-}
-#countdown #minutter {
-  font-size: 350%;
-}
-#countdown #sekunder {
-  font-size: 350%;
-}
-
 .Games-a {
-  background-color: #fdfdfe;
+  background-color: #efefef;
   padding: 10px;
   border-radius: 50px;
   bottom: -2px;
   right: 0;
-  margin: 45px;
+  margin: 20px;
   position: fixed;
 }
 
 footer {
   bottom: 0;
   position: fixed;
-  background-color: #fdfdfe;
+  background-color: #efefef;
   width: 90%;
   border-radius: 10px;
   margin-left: 3vw;
@@ -109,13 +86,89 @@ footer img {
   margin: 10px;
 }
 
+.socialeAkt h1 {
+  margin: 0;
+}
+.socialeAkt h2 {
+  margin: 0;
+}
+.socialeAkt p {
+  margin: 0;
+}
+
+.fredagsbarTitle {
+  text-align: center;
+  color: #efefef;
+  font-size: 40px;
+  padding-bottom: 1vh;
+}
+
+.fredagsbarText {
+  text-align: center;
+  color: #efefef;
+  font-size: 31px;
+  padding-top: 1vh;
+  font-style: italic;
+}
+
+.fredagbarSection {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+.fredagbarSection p {
+  margin: 0;
+  padding: 0;
+  font-size: 31px;
+}
+
+#fa-ellipsis {
+  margin-top: 3vh;
+  font-size: 31px;
+  margin-left: 45vw;
+  color: #efefef;
+}
+
+.mainSection {
+  display: flex;
+  justify-content: center;
+  font-size: 31px;
+  margin-top: 0;
+}
+.mainSection .socialArtOne {
+  margin-right: 3vw;
+}
+
+.dividerDiv {
+  background-color: #DE2627;
+  height: 0.5vh;
+}
+
+.tilmeldSection {
+  margin-top: 3vh;
+}
+.tilmeldSection a {
+  text-decoration: none;
+  color: #efefef;
+  text-align: center;
+}
+.tilmeldSection a p {
+  background-color: #273C92;
+  font-size: 40px;
+  border-radius: 2vh;
+  width: 60%;
+  padding: 1vh;
+  margin-left: 17vw;
+}
+
 .footer-div {
   display: flex;
   justify-content: flex-end;
 }
 .footer-div a {
-  background-color: #de2627;
-  color: #fdfdfe;
+  background-color: #d02e27;
+  color: #efefef;
   text-decoration: none;
   border-radius: 50px;
   margin-right: 10px;
