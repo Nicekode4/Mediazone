@@ -1,7 +1,8 @@
 console.log(document.querySelector('.socialArtOne'));
 let event = document.querySelector('.socialArtOne')
 let dato = document.querySelector('.socialArtTwo')
-
+let favi = "https://s2.googleusercontent.com/s2/favicons?domain_url=https://www.stackoverflow.com"
+console.log(favi);
 // As with JSON, use the Fetch API & ES6
 fetch('events.txt')
   

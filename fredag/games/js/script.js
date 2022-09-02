@@ -1,43 +1,20 @@
-(function () {
-  const second = 1000,
-        minute = second * 60,
-        hour = minute * 60,
-        day = hour * 24;
-
-  //I'm adding this section so I don't have to keep updating this pen every year :-)
-  //remove this if you don't need it
-  let today = new Date(),
-      dd = String(today.getDate()).padStart(2, "0"),
-      mm = String(today.getMonth() + 1).padStart(2, "0"),
-      yyyy = today.getFullYear(),
-      nextYear = yyyy + 1,
-      dayMonth = "04/1/",
-      birthday = dayMonth + yyyy;
+let container = document.querySelector('.grid-container')
+let url = "https://s2.googleusercontent.com/s2/favicons?domain_url="
+// As with JSON, use the Fetch API & ES6
+fetch('spil.txt')
   
-  today = mm + "/" + dd + "/" + yyyy;
-  if (today > birthday) {
-    birthday = dayMonth + nextYear;
-  }
-  //end
-  
-  const countDown = new Date(birthday).getTime(),
-      x = setInterval(function() {    
+  .then(response => response.text())
+  .then(data => {
+  	let array1 = JSON.stringify(data).split("\\r\\n")
+    array1.shift(); // removes first element
+    array1.pop(); // removes last element
+    for (let index = 0; index < array1.length; index++) {
+          let array2 = array1[index].split("-");
 
-        const now = new Date().getTime(),
-              distance = countDown - now;
+  	     container.innerHTML = container.innerHTML + '<div class="grid-item"><a href="' + array2[0] + '"target="_blank" rel="noopener noreferrer"><img class="gridImg" style="height: 100px;" src="' + url + array2[0] + '" alt="App Icon" ></a><figcaption>' + array2[1] + '</figcaption></div>'
+    }
 
-        document.getElementById("dage").innerText = Math.floor(distance / (day)),
-          document.getElementById("timer").innerText = Math.floor((distance % (day)) / (hour)),
-          document.getElementById("minutter").innerText = Math.floor((distance % (hour)) / (minute)),
-          document.getElementById("sekunder").innerText = Math.floor((distance % (minute)) / second);
+  });
+//https://s2.googleusercontent.com/s2/favicons?domain_url=https://outlook.live.com
 
-        //do something later when date is reached
-        if (distance < 0) {
-          document.getElementById("headline").innerText = "Det sker lige nu!";
-          document.getElementById("countdown").style.display = "none";
-          document.getElementById("content").style.display = "block";
-          clearInterval(x);
-        }
-        //seconds
-      }, 0)
-  }());
+  //<div class="grid-item"><img class="gridImg" src="./assests/APP.png" alt="App Icon" ><figcaption>app navn</figcaption></div>
