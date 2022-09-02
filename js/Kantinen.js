@@ -4,9 +4,9 @@ let dayOfWeekNumber = date.getDay();
 currentdate = new Date();
 let oneJan = new Date(currentdate.getFullYear(),0,1);
 let numberOfDays = Math.floor((currentdate - oneJan) / (24 * 60 * 60 * 1000));
-let result = Math.ceil(( currentdate.getDay() + numberOfDays) / 7);
+let result = Math.ceil(( currentdate.getDay() + numberOfDays) / 7) - 1;
 let menu = JSON.parse(window.localStorage.getItem('canteen'))
-console.log(menu.Week);
+//console.log(result);
 if (window.localStorage.getItem('canteen') === null) {
     $.getJSON('https://infoskaerm.techcollege.dk/umbraco/api/content/getcanteenmenu/?format=json', function(data) {
         window.localStorage.setItem('canteen', JSON.stringify(data))
