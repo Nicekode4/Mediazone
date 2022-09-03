@@ -15,15 +15,17 @@ fetch('events.json')
     array1.pop(); // removes last element
     console.log(data);
     console.log(array1);
-    name()
     
   });
-  console.log("dr");
-  function name() {
+  
+  setTimeout(() => {
+    console.log(array1);
     for (let index = 0; index < array1.length; index++) {
-          let array2 = array1[index].split("-");
-  	      event.innerHTML = '<p>' + event.innerHTML + array2[0] + '</p>'
-          dato.innerHTML = '<p>' + dato.innerHTML + array2[1] + '</p>'
-    }
-  }
+    let array2 = array1[index].split("-");
+    event.innerHTML = '<p>' + event.innerHTML + array2[0] + '</p>'
+    dato.innerHTML = '<p>' + dato.innerHTML + array2[1] + '</p>'
+}
+
+  }, 200);
+  
   
