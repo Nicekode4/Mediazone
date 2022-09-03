@@ -7,14 +7,14 @@ let array1;
 let data1;
 let test = "\"Start\\nFredagsbar - 02.09\\nIT Dayz - 11.09\\nNoget - 12.09\\nSlut\""
 console.log("dr");
-console.log(JSON.stringify(test).split("\\\\n"));
+console.log(JSON.stringify(test).split(""));
 console.log("dr");
 // As with JSON, use the Fetch API & ES6
 fetch('events.txt')
   .then(response => response.text())
   .then(data => {
     // console.log();
-    array1 = JSON.stringify(data).split("\\n")
+    array1 = JSON.stringify(data).split("\\")
     //array1.shift(); // removes first element
     //array1.pop(); // removes last element
     
