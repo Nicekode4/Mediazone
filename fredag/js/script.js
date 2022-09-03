@@ -15,8 +15,8 @@ fetch('events.txt')
   .then(data => {
     // console.log();
     array1 = JSON.stringify(data).split("\\n")
-    //array1.shift(); // removes first element
-    //array1.pop(); // removes last element
+    array1.shift(); // removes first element
+    array1.pop(); // removes last element
     
     console.log(array1);
     
