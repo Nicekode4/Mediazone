@@ -6,9 +6,6 @@ let favi = "https://s2.googleusercontent.com/s2/favicons?domain_url=https://www.
 let array1;
 let data1;
 let test = "\"Start\\nFredagsbar - 02.09\\nIT Dayz - 11.09\\nNoget - 12.09\\nSlut\""
-console.log("dr");
-console.log(JSON.stringify(test).split(""));
-console.log("dr");
 // As with JSON, use the Fetch API & ES6
 fetch('events.txt')
   .then(response => response.text())
