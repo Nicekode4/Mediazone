@@ -3,22 +3,24 @@
 let event = document.querySelector('.socialArtOne')
 let dato = document.querySelector('.socialArtTwo')
 let favi = "https://s2.googleusercontent.com/s2/favicons?domain_url=https://www.stackoverflow.com"
-let array1;
+let array1 = ""
+let data1;
 
 // As with JSON, use the Fetch API & ES6
 fetch('events.json')
   .then(response => response.text())
   .then(data => {
   	array1 = JSON.stringify(data).split("\\r\\n")
+    data1 = data
     
-    array1.shift(); // removes first element
-    array1.pop(); // removes last element
-    console.log(data);
-    console.log(array1);
     
   });
   
   setTimeout(() => {
+    array1.shift(); // removes first element
+    array1.pop(); // removes last element
+    console.log(data1);
+    console.log(array1);
     console.log(array1);
     for (let index = 0; index < array1.length; index++) {
     let array2 = array1[index].split("-");
@@ -26,6 +28,6 @@ fetch('events.json')
     dato.innerHTML = '<p>' + dato.innerHTML + array2[1] + '</p>'
 }
 
-  }, 200);
+  }, 1000);
   
   
