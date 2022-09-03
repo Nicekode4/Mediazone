@@ -13,25 +13,22 @@ console.log("dr");
 fetch('events.txt')
   .then(response => response.text())
   .then(data => {
-  	
-    let data1 = data
-    let myarray = JSON.stringify(data1).split("\\r\\n")
-    console.log(myarray);
+    // console.log();
+    array1 = JSON.stringify(data).split("\\\\n")
+    array1.shift(); // removes first element
+    array1.pop(); // removes last element
     
+    console.log(array1);
+    
+    for (let index = 0; index < array1.length; index++) {
+let array2 = array1[index].split("-");
+    event.innerHTML = '<p>' + event.innerHTML + array2[0] + '</p>'
+    dato.innerHTML = '<p>' + dato.innerHTML + array2[1] + '</p>'
+}
+  setTimeout(() => {
+    
+
+  }, 1000);
     
   });
- // console.log();
-  //setTimeout(() => {
-   // array1 = JSON.stringify(data).split("\\r\\n")
-   // array1.shift(); // removes first element
-   // array1.pop(); // removes last element
-    
-   // console.log(array1);
-    
-   // for (let index = 0; index < array1.length; index++) {
-///let array2 = array1[index].split("-");
-   // event.innerHTML = '<p>' + event.innerHTML + array2[0] + '</p>'
-   // dato.innerHTML = '<p>' + dato.innerHTML + array2[1] + '</p>'
-//}
-
-  //}, 1000);
+ 
