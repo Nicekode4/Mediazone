@@ -8,7 +8,7 @@ fetch('events.json')
   .then(response => response.text())
   .then(data => {
   	let array1 = JSON.stringify(data).split("\\r\\n")
-    console.log(array1);
+    
     array1.shift(); // removes first element
     array1.pop(); // removes last element
     for (let index = 0; index < array1.length; index++) {
@@ -16,5 +16,5 @@ fetch('events.json')
   	      event.innerHTML = '<p>' + event.innerHTML + array2[0] + '</p>'
           dato.innerHTML = '<p>' + dato.innerHTML + array2[1] + '</p>'
     }
-
+    console.log(array1);
   });
