@@ -12,8 +12,8 @@ fetch('events.txt')
   .then(data => {
   	
     let data1 = data
-    console.log(data1);
-  
+    console.log(JSON.stringify(data1));
+    
     
   });
   
