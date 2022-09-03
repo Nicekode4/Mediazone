@@ -10,13 +10,14 @@ let data1;
 fetch('events.json')
   .then(response => response.text())
   .then(data => {
-  	array1 = JSON.stringify(data).split("\\r\\n")
+  	
     data1 = data
     
     
   });
   
   setTimeout(() => {
+    array1 = JSON.stringify(data1).split("\\r\\n")
     array1.shift(); // removes first element
     array1.pop(); // removes last element
     console.log(data1);
