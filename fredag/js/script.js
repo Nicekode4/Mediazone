@@ -1,11 +1,10 @@
-console.log(document.querySelector('.socialArtOne'));
+
+
 let event = document.querySelector('.socialArtOne')
 let dato = document.querySelector('.socialArtTwo')
 let favi = "https://s2.googleusercontent.com/s2/favicons?domain_url=https://www.stackoverflow.com"
-console.log(favi);
 // As with JSON, use the Fetch API & ES6
-fetch('events.txt')
-  
+fetch('events.json')
   .then(response => response.text())
   .then(data => {
   	let array1 = JSON.stringify(data).split("\\r\\n")
