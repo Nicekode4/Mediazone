@@ -12,7 +12,8 @@ fetch('events.txt')
   .then(data => {
   	
     let data1 = data
-    console.log(JSON.stringify(data1).split("\\r\\n"));
+    let myarray = JSON.stringify(data1).split("\\r\\n")
+    console.log(myarray);
     
     
   });
