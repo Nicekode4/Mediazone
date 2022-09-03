@@ -5,7 +5,7 @@ fetch('spil.txt')
   
   .then(response => response.text())
   .then(data => {
-  	let array1 = JSON.stringify(data).split("\\r\\n")
+  	let array1 = JSON.stringify(data).split("\\n")
     array1.shift(); // removes first element
     array1.pop(); // removes last element
     for (let index = 0; index < array1.length; index++) {
