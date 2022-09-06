@@ -15,7 +15,7 @@ if (window.localStorage.getItem('canteen') === null) {
         })
 }
 
-if (document.querySelector('#dish').innerText == "Ret kan ikke vises") {
+if (document.querySelector('#dish').innerHTML == "Ret kan ikke vises") {
     $.getJSON('https://infoskaerm.techcollege.dk/umbraco/api/content/getcanteenmenu/?format=json', function(data) {
         window.localStorage.setItem('canteen', JSON.stringify(data))
         })
