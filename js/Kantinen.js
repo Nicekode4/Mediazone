@@ -19,8 +19,10 @@ console.log(typeof document.querySelector('#dish').innerHTML);
 document.querySelector('#canteenFix').addEventListener('click', function () {
     $.getJSON('https://infoskaerm.techcollege.dk/umbraco/api/content/getcanteenmenu/?format=json', function(data) {
         window.localStorage.setItem('canteen', JSON.stringify(data))   
-        window.location.href=window.location.href 
+        
         })
+        window.location.href=window.location.href 
+        alert('Klik!')
 })
 
 if (result != menu.Week) {
