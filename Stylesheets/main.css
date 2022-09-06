@@ -31,24 +31,11 @@ header {
   display: flex;
   justify-content: end;
 }
-.Kantinen-Tab div {
-  width: 8vh;
-}
-.Kantinen-Tab div #canteenRefresh {
-  height: 4.5vh;
-  width: 10vw;
-  margin-bottom: 1vh;
-  padding: 1vh;
-  border-radius: 50px;
-  border: none;
-  color: white;
-  background-color: red;
-}
-.Kantinen-Tab div img {
+.Kantinen-Tab img {
   height: 50px;
   width: 50px;
-  padding-top: 90px;
-  padding-bottom: 20px;
+  padding-top: 70px;
+  padding-bottom: 50px;
   content: url(../assests/arrow-24-512.png);
 }
 
