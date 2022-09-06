@@ -14,17 +14,18 @@ if (window.localStorage.getItem('canteen') === null) {
         window.localStorage.setItem('canteen', JSON.stringify(data))
         })
 }
+console.log(typeof document.querySelector('#dish').innerHTML);
 
-if (document.querySelector('#dish').innerHTML == "Ret kan ikke vises") {
+document.querySelector('#canteenFix').addEventListener('click', function () {
     $.getJSON('https://infoskaerm.techcollege.dk/umbraco/api/content/getcanteenmenu/?format=json', function(data) {
-        window.localStorage.setItem('canteen', JSON.stringify(data))
+        window.localStorage.setItem('canteen', JSON.stringify(data))   
+        window.location.href=window.location.href 
         })
-}
+})
+
 if (result != menu.Week) {
 
-    $.getJSON('https://infoskaerm.techcollege.dk/umbraco/api/content/getcanteenmenu/?format=json', function(data) {
-        window.localStorage.setItem('canteen', JSON.stringify(data))    
-        })
+    
 }else{
     
     switch(dayOfWeekNumber){
