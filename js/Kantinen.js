@@ -15,9 +15,15 @@ if (window.localStorage.getItem('canteen') === null) {
         })
 }
 
-if (result != menu.Week) {
+if (document.querySelector('#dish').innerText == "Ret kan ikke vises") {
     $.getJSON('https://infoskaerm.techcollege.dk/umbraco/api/content/getcanteenmenu/?format=json', function(data) {
         window.localStorage.setItem('canteen', JSON.stringify(data))
+        })
+}
+if (result != menu.Week) {
+
+    $.getJSON('https://infoskaerm.techcollege.dk/umbraco/api/content/getcanteenmenu/?format=json', function(data) {
+        window.localStorage.setItem('canteen', JSON.stringify(data))    
         })
 }else{
     
