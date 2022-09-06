@@ -16,14 +16,15 @@ if (window.localStorage.getItem('canteen') === null) {
 }
 console.log(typeof document.querySelector('#dish').innerHTML);
 
-document.querySelector('#canteenFix').addEventListener('click', function () {
-    $.getJSON('https://infoskaerm.techcollege.dk/umbraco/api/content/getcanteenmenu/?format=json', function(data) {
+function canteen() {
+     $.getJSON('https://infoskaerm.techcollege.dk/umbraco/api/content/getcanteenmenu/?format=json', function(data) {
         window.localStorage.setItem('canteen', JSON.stringify(data))   
-        
-        })
-        
         alert('Klik!')
 })
+}
+        
+        
+
 
 if (result != menu.Week) {
 
