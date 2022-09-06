@@ -13,7 +13,7 @@ const assets = [
   "/bustider/index.html",
   "/bustider/js/script.js",
   "/fredag/games/spil.txt",
-  "/fredag/events.txt",
+  "/fredag/events.txt"
 
 ];
 
