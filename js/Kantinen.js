@@ -20,6 +20,7 @@ function canteen() {
      $.getJSON('https://infoskaerm.techcollege.dk/umbraco/api/content/getcanteenmenu/?format=json', function(data) {
         window.localStorage.setItem('canteen', JSON.stringify(data))   
 })
+window.location.href=window.location.href
 }
         
         
