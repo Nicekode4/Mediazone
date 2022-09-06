@@ -21,7 +21,7 @@ document.querySelector('#canteenFix').addEventListener('click', function () {
         window.localStorage.setItem('canteen', JSON.stringify(data))   
         
         })
-        window.location.href=window.location.href 
+        
         alert('Klik!')
 })
 
