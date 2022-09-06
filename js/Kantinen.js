@@ -19,7 +19,6 @@ console.log(typeof document.querySelector('#dish').innerHTML);
 function canteen() {
      $.getJSON('https://infoskaerm.techcollege.dk/umbraco/api/content/getcanteenmenu/?format=json', function(data) {
         window.localStorage.setItem('canteen', JSON.stringify(data))   
-        alert('Klik!')
 })
 }
         
