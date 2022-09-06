@@ -10,6 +10,7 @@ let today = window.localStorage.getItem('today')
 console.log(today);
 if (today != dayOfWeekNumber) {
     canteen()
+    console.log(true);
     window.localStorage.setItem('today', dayOfWeekNumber) ;
 }else{
     switch(dayOfWeekNumber){
@@ -82,10 +83,6 @@ function canteen() {
 })
 
 }
-
-window.addEventListener('drag', function () {
-    alert('hi')
-})
 
 
 
