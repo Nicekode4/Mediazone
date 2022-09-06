@@ -1,48 +1,48 @@
 {
-  "name": "Calculator",
-  "short_name": "calc",
+  "name": "MediaZone",
+  "short_name": "Mediazone",
   "start_url": "/index.html",
   "display": "standalone",
-  "background_color": "#00ff6c",
+  "background_color": "#253C94",
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/logo-72-72.png",
+      "src": "/assests/logo-72-72.png",
       "type": "image/png",
       "sizes": "72x72"
     },
     {
-      "src": "/logo-96-96.png",
+      "src": "/assests/logo-96-96.png",
       "type": "image/png",
       "sizes": "96x96"
     },
     {
-      "src": "/logo-128-128.png",
+      "src": "/assests/logo-128-128.png",
       "type": "image/png",
       "sizes": "128x128"
     },
     {
-      "src": "/logo-144-144.png",
+      "src": "/assests/logo-144-144.png",
       "type": "image/png",
       "sizes": "144x144"
     },
     {
-      "src": "/logo-152-152.png",
+      "src": "/assests/logo-152-152.png",
       "type": "image/png",
       "sizes": "152x152"
     },
     {
-      "src": "/logo-192-192.png",
+      "src": "/assests/logo-192-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/logo-384-384.png",
+      "src": "/assests/logo-384-384.png",
       "type": "image/png",
       "sizes": "384x384"
     },
     {
-      "src": "/logo-512-512.png",
+      "src": "/assests/logo-512-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
