@@ -11,7 +11,7 @@ fetch('spil.txt')
     for (let index = 0; index < array1.length; index++) {
           let array2 = array1[index].split("-");
 
-  	     container.innerHTML = container.innerHTML + '<div class="grid-item"><a href="' + array2[0] + '"target="_blank" rel="noopener noreferrer"><img class="gridImg" src="' + url + array2[0] + '" alt="App Icon" ></a><figcaption>' + array2[1] + '</figcaption></div>'
+  	     container.innerHTML = container.innerHTML + '<div class="grid-item"><a href="' + array2[0] + '"target="_blank" rel="noopener noreferrer"><img class="gridImg" src="./assests/APP.png" alt="App Icon" ></a><figcaption>' + array2[1] + '</figcaption></div>'
     }
 
   });

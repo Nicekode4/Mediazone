@@ -49,9 +49,10 @@ hr.roundedTwo {
 }
 .gridImg {
 	background-color: white;
-	border-radius: 3vw;
+	border-radius: 2vw;
 	padding: 1vw;
-	height: 5vh;
+	height: 50px;
+	width: 50px;
 }
 .underholding_titel {
 	color: gainsboro;
@@ -88,9 +89,9 @@ hr.roundedTwo {
 }
 .grid-container {
 	display: grid;
-	justify-content: center;
+	//justify-content: center;
 	grid-template-columns: auto auto auto;
-	grid-gap: 20vw;
+	grid-gap: 11vw;
 }
 .grid-item {
 	width: auto;
