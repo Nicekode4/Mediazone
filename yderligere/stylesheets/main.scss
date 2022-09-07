@@ -67,6 +67,10 @@ header {
   margin-bottom: 15vh;
 }
 //Forside
+a{
+	color: #efefef;
+	text-decoration: none;
+}
 .Tab {
 	border-radius: 19px;
 	background: #253C94;
@@ -95,9 +99,42 @@ header {
 	}
 } 
 
+//Regler
+#reglerMain{
+	color: #efefef;
+	h1{
+		text-align: center;
+		font-size: 50px;
+	}
+	section{
+		display: grid;
+		justify-content: center;
+		article{
+
+		ul{
+		list-style: none;
+		li{
+
+		}
+		h2{
+
+		}
+	}
+	}
+	}
+	
+	h3{
+		text-align: center;
+		font-size: 35px;
+	}
+	a{
+		text-align: center;
+		font-size: 35px;
+	}
+}
 
 //Credits
-main{
+#creditMain{
 	color: #efefef;
 	h1{
 		text-align: center;
