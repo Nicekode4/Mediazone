@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap");
+html {
+  background-color: #273C92;
+  font-family: cabin;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.Header-Img {
+  width: 200px;
+  margin-bottom: 15vh;
+}
+
+html {
+  background-color: #273C92;
+  font-family: cabin;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.Header-Img {
+  width: 200px;
+  margin-bottom: 15vh;
+}
+
+a {
+  color: #efefef;
+  text-decoration: none;
+}
+
+.Tab {
+  border-radius: 19px;
+  background: #253C94;
+  box-shadow: -23px 23px 47px #1b2b6b, 23px -23px 47px #2f4dbd;
+  font-size: 150%;
+  font-family: cabin;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: end;
+}
+.Tab h1 {
+  margin-right: 40vw;
+  margin-top: 7vh;
+  font-size: 30px;
+  color: #efefef;
+}
+.Tab img {
+  width: 50px;
+  height: 50px;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  content: url(../assests/arrow-24-512.png);
+}
+
+#reglerMain {
+  color: #efefef;
+}
+#reglerMain h1 {
+  text-align: center;
+  font-size: 50px;
+}
+#reglerMain section {
+  display: grid;
+  justify-content: center;
+}
+#reglerMain section article ul {
+  list-style: none;
+}
+#reglerMain h3 {
+  text-align: center;
+  font-size: 35px;
+}
+#reglerMain a {
+  text-align: center;
+  font-size: 35px;
+}
+
+#creditMain {
+  color: #efefef;
+}
+#creditMain h1 {
+  text-align: center;
+  font-size: 50px;
+}
+#creditMain section ul {
+  text-align: center;
+  list-style: none;
+}
+#creditMain section ul li {
+  font-size: 20px;
+}
+#creditMain section h2 {
+  text-align: center;
+  font-size: 35px;
+}/*# sourceMappingURL=main.css.map */
