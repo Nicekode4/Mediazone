@@ -1,3 +1,7 @@
+ 
+@use "./colors" as *;
+@use "./fonts" as *;
+
 hr.roundedTwo {
 	height: 0.1vh;
 	background-color: #ddd;

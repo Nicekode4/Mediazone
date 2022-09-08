@@ -1,3 +1,7 @@
+ 
+@use "./colors" as *;
+@use "./fonts" as *;
+
 header {
     display: flex;
     justify-content: center;
@@ -5,6 +9,7 @@ header {
   
   .Header-Img {
     width: 200px;
+    margin-bottom: 200px;
   }
   .filler-section{
     padding: 100px;

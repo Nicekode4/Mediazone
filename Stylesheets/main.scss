@@ -1,13 +1,13 @@
 @use "./header";
-@use "./colors" as c;
-@use "./fonts" as f;
+@use "./colors" as *;
+@use "./fonts" as *;
 @use "./bustiderTapForside";
 @use "./kantineTapForside";
 @use "./yderligereInfoTapForside";
 @use "./socialTapForside";
 @use "./yderligereForsideTab";
-@use "./yderligereCredits#creditMain";
-@use "./yderligereRegler#reglerMain";
+@use "./yderligereCreditsCreditMain";
+@use "./yderligereReglerReglerMain";
 @use "./socialTopArrow";
 @use "./socialMainSection";
 @use "./socialGamesButton";
@@ -23,8 +23,9 @@
 
 
 html {
-background-color: c.$blue;
+background-color: $blue;
 font-family: Cabin;
+color: $white;
 a{
   text-decoration: none;
 }

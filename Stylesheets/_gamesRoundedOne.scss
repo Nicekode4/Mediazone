@@ -1,3 +1,7 @@
+ 
+@use "./colors" as *;
+@use "./fonts" as *;
+
 hr.roundedOne {
 	height: 0.1vh;
 	width: 60%;
