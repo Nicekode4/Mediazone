@@ -1,0 +1,36 @@
+.yderligereInfo-Tab {
+    border-radius: 19px;
+    background: #253C94;
+    box-shadow:  -23px 23px 47px #1b2b6b,
+                 23px -23px 47px #2f4dbd;
+    font-size: 150%;
+    font-family: cabin;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    display: flex;
+  
+    h1 {
+      padding: 20px;
+      width: 90%;
+      color: white;
+  
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  
+    img {
+      width: 50px;
+      height: 50px;
+      padding-top: 60px;
+      padding-bottom: 50px;
+      content: url(../assests/arrow-24-512.png);
+    }
+  }
+  .a-yderligereinfo{
+    padding-right: 60%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }

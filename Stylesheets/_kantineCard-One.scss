@@ -1,0 +1,23 @@
+.Card-One{
+    display: flex;
+    justify-content: center;
+    border-radius: 42px;
+    border-radius: 19px;
+    background: #253C94;
+    box-shadow:  -15px 15px 30px #152253,
+                 15px -15px 30px #3556d5;
+    margin-bottom: 10px;
+  
+  }
+  .Card-One-Art-One{
+    width: 70%;
+    margin: 10px;
+    font-size: 150%;
+    
+  }
+  .Card-One-Art-Two{
+    width: 30%;
+    text-align: right;
+    margin: 10px;
+    font-size: 150%;
+  }
