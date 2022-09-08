@@ -403,6 +403,9 @@ h1 a {
   margin-bottom: 0;
   padding-bottom: 0;
 }
+.fredagsbaren h1 {
+  text-align: center;
+}
 
 .single-player {
   color: gainsboro;
@@ -419,6 +422,9 @@ h1 a {
   margin-bottom: 0;
   padding-bottom: 0;
 }
+.single-player h1 {
+  text-align: center;
+}
 
 .multi-player {
   color: gainsboro;
@@ -432,6 +438,9 @@ h1 a {
   font-size: 20px;
   margin-bottom: 0;
   padding-bottom: 0;
+}
+.multi-player h1 {
+  text-align: center;
 }
 
 hr.roundedOne {
