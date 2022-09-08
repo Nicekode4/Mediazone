@@ -1,10 +1,26 @@
-@use "./bustiderTapForside";
-@use "./kantineTapForside";
-@use "./yderligereTapForside";
-@use "./socialTapForside";
 @use "./header";
 @use "./colors" as c;
 @use "./fonts" as f;
+@use "./bustiderTapForside";
+@use "./kantineTapForside";
+@use "./yderligereInfoTapForside";
+@use "./socialTapForside";
+@use "./yderligereForsideTab";
+@use "./yderligereCredits#creditMain";
+@use "./yderligereRegler#reglerMain";
+@use "./socialTopArrow";
+@use "./socialMainSection";
+@use "./socialGamesButton";
+@use "./kantineCard-One";
+@use "./gamesAll";
+@use "./gamesUnderholdningTitel";
+@use "./gamesFredagsbaren";
+@use "./gamesSingle-player";
+@use "./gamesMulti-player";
+@use "./gamesRoundedOne";
+@use "./gamesRoundedTwo";
+@use "./gamesGrid";
+
 
 html {
 background-color: c.$blue;
