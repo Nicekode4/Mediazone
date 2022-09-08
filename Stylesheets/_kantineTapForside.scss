@@ -1,0 +1,50 @@
+.Kantinen-Tab {
+    border-radius: 19px;
+    background: #253C94;
+    box-shadow:  -23px 23px 47px #1b2b6b,
+                 23px -23px 47px #2f4dbd;
+    font-size: 150%;
+    font-family: cabin;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: end;
+      img {
+      height: 50px;
+      width: 50px;
+      padding-top: 70px;
+      padding-bottom: 50px;
+      content: url(../assests/arrow-24-512.png);
+    }
+    
+  }
+  
+    h1 {
+      padding: 20px;
+      width: 90%;
+      color: white;
+      p{
+        margin: 0;
+        font-size: large;
+        color: white;
+        border-top: solid white 1.5px;
+        width: 90%;
+        
+        span{
+          
+        }
+      }
+  
+      a {
+        color: white;
+        text-decoration: none;
+        
+      }
+    }
+    .a-kantinen{
+        padding-right: 70%;
+        padding-top: 40px;
+        padding-bottom: 60px;
+      }

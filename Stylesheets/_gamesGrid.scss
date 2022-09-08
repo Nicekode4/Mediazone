@@ -1,0 +1,18 @@
+.grid-container {
+	display: grid;
+	//justify-content: center;
+	grid-template-columns: auto auto auto;
+	grid-gap: 11vw;
+}
+.grid-item {
+	width: auto;
+	height: auto;
+	margin-top: 3vh;
+}
+.gridImg {
+	background-color: white;
+	border-radius: 2vw;
+	padding: 1vw;
+	height: 50px;
+	width: 50px;
+}
