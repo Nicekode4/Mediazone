@@ -447,7 +447,19 @@ hr.roundedTwo {
   background-color: #ddd;
 }
 
-.grid-container {
+.grid-containerOne {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 11vw;
+}
+
+.grid-containerTwo {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 11vw;
+}
+
+.grid-containerThree {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 11vw;
