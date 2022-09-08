@@ -2,7 +2,19 @@
 @use "./colors" as *;
 @use "./fonts" as *;
 
-.grid-container {
+.grid-containerOne {
+	display: grid;
+	//justify-content: center;
+	grid-template-columns: auto auto auto;
+	grid-gap: 11vw;
+}
+.grid-containerTwo {
+	display: grid;
+	//justify-content: center;
+	grid-template-columns: auto auto auto;
+	grid-gap: 11vw;
+}
+.grid-containerThree {
 	display: grid;
 	//justify-content: center;
 	grid-template-columns: auto auto auto;
