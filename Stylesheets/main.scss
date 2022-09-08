@@ -1,203 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@use "./header";
+@use "./colors" as c;
+@use "./fonts" as f;
+@use "./bustiderTapForside";
+@use "./kantineTapForside";
+@use "./yderligereInfoTapForside";
+@use "./socialTapForside";
+@use "./yderligereForsideTab";
+@use "./yderligereCredits#creditMain";
+@use "./yderligereRegler#reglerMain";
+@use "./socialTopArrow";
+@use "./socialMainSection";
+@use "./socialGamesButton";
+@use "./kantineCard-One";
+@use "./gamesAll";
+@use "./gamesUnderholdningTitel";
+@use "./gamesFredagsbaren";
+@use "./gamesSingle-player";
+@use "./gamesMulti-player";
+@use "./gamesRoundedOne";
+@use "./gamesRoundedTwo";
+@use "./gamesGrid";
 
-@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 html {
-background-color: #253C94;
+background-color: c.$blue;
 font-family: Cabin;
-}
-
-header {
-  display: flex;
-  justify-content: center;
-}
-
-.Header-Img {
-  width: 200px;
-}
-.filler-section{
-  padding: 100px;
-}
-a {
-  color: white;
+a{
   text-decoration: none;
 }
-.Kantinen-Tab {
-  border-radius: 19px;
-  background: #253C94;
-  box-shadow:  -23px 23px 47px #1b2b6b,
-               23px -23px 47px #2f4dbd;
-  font-size: 150%;
-  font-family: cabin;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 10px;
-  display: flex;
-  justify-content: end;
-    img {
-    height: 50px;
-    width: 50px;
-    padding-top: 70px;
-    padding-bottom: 50px;
-    content: url(../assests/arrow-24-512.png);
-  }
-  
-}
-
-  h1 {
-    padding: 20px;
-    width: 90%;
-    color: white;
-    p{
-      margin: 0;
-      font-size: large;
-      color: white;
-      border-top: solid white 1.5px;
-      width: 90%;
-      
-      span{
-        
-      }
-    }
-
-    a {
-      color: white;
-      text-decoration: none;
-      
-    }
-  }
-  
-.Bustider-Tab {
-  border-radius: 19px;
-  background: #253C94;
-  box-shadow:  -23px 23px 47px #1b2b6b,
-               23px -23px 47px #2f4dbd;
-  font-size: 150%;
-  font-family: cabin;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 10px;
-  display: flex;
-  justify-content: end;
-  img {
-    width: 50px;
-    height: 50px;
-    padding-top: 60px;
-    padding-bottom: 50px;
-    content: url(../assests/arrow-24-512.png);
-  }
-  h1 {
-    padding: 20px;
-    width: 90%;
-    padding-top: 0;
-    margin-top: 0;
-    color: white;
-    
-    p{
-      margin: 0;
-      padding-top: 0;
-      padding-bottom: 0;
-      
-      color: white;
-      border-top: solid white 1.5px;
-      width: 90%;
-      a {
-      color: white;
-      text-decoration: none;
-      width: 90%;
-    }
-      span{
-        margin: 0;
-        padding: 0;
-        width: 90%;
-      }
-    }
-}
-
-  
-
-    
-  }
-  
-
-.Fredagsbar-Tab {
-  border-radius: 19px;
-  background: #253C94;
-  box-shadow:  -23px 23px 47px #1b2b6b,
-               23px -23px 47px #2f4dbd;
-  font-size: 150%;
-  font-family: cabin;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 10px;
-  display: flex;
-  justify-content: end;
-
-  h1 {
-    padding: 20px;
-    width: 90%;
-    color: white;
-
-    a {
-      color: white;
-      text-decoration: none;
-    }
-  }
-
-  img {
-    width: 50px;
-    height: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    content: url(../assests/arrow-24-512.png);
-  }
-}
-
-.yderligereInfo-Tab {
-  border-radius: 19px;
-  background: #253C94;
-  box-shadow:  -23px 23px 47px #1b2b6b,
-               23px -23px 47px #2f4dbd;
-  font-size: 150%;
-  font-family: cabin;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 20px;
-  display: flex;
-
-  h1 {
-    padding: 20px;
-    width: 90%;
-    color: white;
-
-    a {
-      color: white;
-      text-decoration: none;
-    }
-  }
-
-  img {
-    width: 50px;
-    height: 50px;
-    padding-top: 60px;
-    padding-bottom: 50px;
-    content: url(../assests/arrow-24-512.png);
-  }
-}
-.a-kantinen{
-  padding-right: 70%;
-  padding-top: 40px;
-  padding-bottom: 60px;
-}
-.a-fredagsbar{
-  padding-right: 70%;
-  padding-top: 40px;
-  padding-bottom: 60px;
-}
-.a-yderligereinfo{
-  padding-right: 60%;
-  padding-top: 40px;
-  padding-bottom: 40px;
 }

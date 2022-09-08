@@ -1,0 +1,32 @@
+.arrow {
+	position: fixed;
+	top: 2em;
+  left: 2em;
+	width: 20px;
+	height: 20px;
+	background: transparent;
+	border-top: 5px solid $grey;
+	border-right: 5px solid $grey;
+	box-shadow: 0 0 0 lightgray;
+	transition: all 200ms ease;
+	
+	&.back {
+		left: 6em;
+    top: 5.6em;
+		transform: translate3d(0,-50%,0) rotate(-135deg);
+	}	
+	&:hover {
+		border-color: $blue;
+		box-shadow: 0.5vmin -0.5vmin 0 $grey;
+	}
+	
+	&:before { 
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-40%,-60%) rotate(45deg);
+		width: 200%;
+		height: 200%;
+	}
+}

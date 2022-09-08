@@ -73,19 +73,6 @@ header {
   position: fixed;
 }
 
-footer {
-  bottom: 0;
-  position: fixed;
-  background-color: #efefef;
-  width: 90%;
-  border-radius: 10px;
-  margin-left: 3vw;
-}
-footer img {
-  width: 20vw;
-  margin: 10px;
-}
-
 .socialeAkt h1 {
   margin: 0;
 }
@@ -143,35 +130,4 @@ footer img {
 .dividerDiv {
   background-color: #DE2627;
   height: 0.5vh;
-}
-
-.tilmeldSection {
-  margin-top: 3vh;
-}
-.tilmeldSection a {
-  text-decoration: none;
-  color: #efefef;
-  text-align: center;
-}
-.tilmeldSection a p {
-  background-color: #273C92;
-  font-size: 40px;
-  border-radius: 2vh;
-  width: 60%;
-  padding: 1vh;
-  margin-left: 17vw;
-}
-
-.footer-div {
-  display: flex;
-  justify-content: flex-end;
-}
-.footer-div a {
-  background-color: #d02e27;
-  color: #efefef;
-  text-decoration: none;
-  border-radius: 50px;
-  margin-right: 10px;
-  margin: 10px;
-  font-size: 200%;
 }/*# sourceMappingURL=main.css.map */

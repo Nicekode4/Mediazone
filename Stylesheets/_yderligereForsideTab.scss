@@ -1,0 +1,27 @@
+.Tab {
+	border-radius: 19px;
+	background: #253C94;
+	box-shadow:  -23px 23px 47px #1b2b6b,
+				 23px -23px 47px #2f4dbd;
+	font-size: 150%;
+	font-family: cabin;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 10px;
+	display: flex;
+	justify-content: end;
+	h1{
+		margin-right: 40vw;
+		margin-top: 7vh;
+		font-size: 30px;
+		color: #efefef;
+	}
+	img {
+	  width: 50px;
+	  height: 50px;
+	  padding-top: 60px;
+	  padding-bottom: 50px;
+	  content: url(../assests/arrow-24-512.png);
+	}
+} 
