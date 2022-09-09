@@ -1,3 +1,4 @@
 Start
-https://mediazone.netlify.app - MediaZone
+https://kode4.dk/projects/dograting - Dog rating
+https://kode4.dk/projects/banko - Banko
 Slut
