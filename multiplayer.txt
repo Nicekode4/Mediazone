@@ -1,3 +1,3 @@
 Start
-https://mediazone.netlify.app - MediaZone
+https://kode4.dk/projects/TicTacToe - TicTacToe
 Slut
