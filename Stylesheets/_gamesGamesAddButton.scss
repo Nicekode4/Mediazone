@@ -2,7 +2,7 @@
 @use "./colors" as *;
 @use "./fonts" as *;
 
-.Games-a{
+.Games-add{
     background-color: $white;
     padding: 10px;
     border-radius: 50px;
@@ -10,5 +10,6 @@
     right: 0;
     margin: 20px;
     position: fixed;
+	font-size: 45px;
+	color: black;
   }
-
