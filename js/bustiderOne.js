@@ -11,7 +11,7 @@
                             $(".bustid").html(text2);
                             });
 }else{          
-    if (data.MultiDepartureBoard.Departure[0].rtTime = 'undefined') {
+    if (typeof data.MultiDepartureBoard.Departure[0].rtTime === 'undefined') {
         let text = `${data.MultiDepartureBoard.Departure[0].name}`
         let text2 = `${data.MultiDepartureBoard.Departure[0].time}`
         $(".busnavn").html(text);
@@ -21,7 +21,7 @@
             let a = `${data.MultiDepartureBoard.Departure[0].rtTime}`.replace(':', '')
             let b = `${data.MultiDepartureBoard.Departure[0].time}`.replace(':', '')
             console.log(b);
-            let text2 = `${data.MultiDepartureBoard.Departure[0].time}` + ' + ' + parseInt(a-b)
+            let text2 = `${data.MultiDepartureBoard.Departure[index].time}` + ' + ' + new Date(parseInt(a * 1000-b * 1000)).getSeconds()
             
             $(".busnavn").html(text);
             $(".bustid").html(text2);
