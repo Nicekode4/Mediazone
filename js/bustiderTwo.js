@@ -3,7 +3,8 @@
                     
                    for (let index = 0; index < 10; index++) {
                     $.getJSON('https://xmlopen.rejseplanen.dk/bin/rest.exe/multiDepartureBoard?id1=851400602&id2=851973402&id3=851400601&format=json', function(data) {
-                   if (data.MultiDepartureBoard.Departure[index].rtTime = 'undefined') {
+                        
+                   if (typeof data.MultiDepartureBoard.Departure[index].rtTime === 'undefined') {
                         let navn = `${data.MultiDepartureBoard.Departure[index].line}`
                         let tid = `${data.MultiDepartureBoard.Departure[index].time}`
                         let destination = `${data.MultiDepartureBoard.Departure[index].finalStop}`
@@ -17,8 +18,7 @@
                     }else{
                         let a = `${data.MultiDepartureBoard.Departure[index].rtTime}`.replace(':', '')
                         let b = `${data.MultiDepartureBoard.Departure[index].time}`.replace(':', '')
-                        console.log(b);
-                        let tid = `${data.MultiDepartureBoard.Departure[index].time}` + ' + ' + parseInt(a-b)
+                        let tid = `${data.MultiDepartureBoard.Departure[index].time}` + ' + ' + new Date(parseInt(a * 1000-b * 1000)).getSeconds()
                         let navn = `${data.MultiDepartureBoard.Departure[index].line}`
                         let destination = `${data.MultiDepartureBoard.Departure[index].finalStop}`
                         let HvorErDen = `${data.MultiDepartureBoard.Departure[index].stop}`
