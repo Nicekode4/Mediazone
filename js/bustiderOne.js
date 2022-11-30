@@ -18,8 +18,8 @@
         $(".bustid").html(text2);
         }else{
             let text = `${data.MultiDepartureBoard.Departure[0].name}`
-            let a = `${data.MultiDepartureBoard.Departure[0].rtTime}`.replace(':', '')
-            let b = `${data.MultiDepartureBoard.Departure[0].time}`.replace(':', '')
+            let a = unixConvert(data.MultiDepartureBoard.Departure[index].rtTime)
+            let b = unixConvert(data.MultiDepartureBoard.Departure[index].time)
             console.log(b);
             let text2 = `${data.MultiDepartureBoard.Departure[index].time}` + ' + ' + new Date(parseInt(a * 1000-b * 1000)).getSeconds()
             
@@ -32,3 +32,15 @@
                             
 
 });
+
+function unixConvert(time) {
+    const dateStr = `1970-01-01 ${time}`;
+
+    const date = new Date(dateStr);
+    
+    const timestampInMs = date.getTime();
+    
+    const unixTimestamp = Math.floor(date.getTime() / 1000);
+    console.log(unixTimestamp);
+    return unixTimestamp
+}

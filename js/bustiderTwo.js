@@ -16,9 +16,9 @@
                         document.body.innerHTML = document.body.innerHTML + '<section class="Card-One"><article class="Card-One-Art-One"><h1>' + `${navn}` + '</h1><h3>' + `${HvorErDen}` + '</h3><h5>' + `${destination}` + '</h5></article><article class="Card-One-Art-Two"><h1>' + `${tid}` + '</h1></article></section>'
     
                     }else{
-                        let a = `${data.MultiDepartureBoard.Departure[index].rtTime}`.replace(':', '')
-                        let b = `${data.MultiDepartureBoard.Departure[index].time}`.replace(':', '')
-                        let tid = `${data.MultiDepartureBoard.Departure[index].time}` + ' + ' + new Date(parseInt(a * 1000-b * 1000)).getSeconds()
+                        let a = unixConvert(data.MultiDepartureBoard.Departure[index].rtTime)
+                        let b = unixConvert(data.MultiDepartureBoard.Departure[index].time)
+                        let tid = `${data.MultiDepartureBoard.Departure[index].time}` + ' + ' + new Date(parseInt(a * 1000-b * 1000)).getMinutes()
                         let navn = `${data.MultiDepartureBoard.Departure[index].line}`
                         let destination = `${data.MultiDepartureBoard.Departure[index].finalStop}`
                         let HvorErDen = `${data.MultiDepartureBoard.Departure[index].stop}`
@@ -32,3 +32,16 @@
                    });
                                        
                   }
+
+                  function unixConvert(time) {
+                    const dateStr = `1970-01-01 ${time}`;
+        
+                    const date = new Date(dateStr);
+                    
+                    const timestampInMs = date.getTime();
+                    
+                    const unixTimestamp = Math.floor(date.getTime() / 1000);
+                    console.log(unixTimestamp);
+                    return unixTimestamp
+                }
+        
