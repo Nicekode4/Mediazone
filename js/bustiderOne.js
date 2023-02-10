@@ -487,7 +487,7 @@ let skema2 = []
 for (let index = 0; index < skema.length; index++) {
     const element = skema[index];
     if (new Date().getMinutes() > 40) {
-          if (new Date(element.StartDate).getHours() === new Date().getHours()) {
+          if (new Date(element.StartDate).getHours() === new Date().getHours() + 1) {
         skema2.push(element)
     }  
     } else if (new Date().getMinutes() < 20) {
